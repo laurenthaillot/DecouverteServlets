@@ -30,6 +30,16 @@ public class HelloWorld extends HttpServlet {
 		out.println("<h1>" + message + nom + "</h1>");
 	}
 
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// Set response content type
+		response.setContentType("text/jsp");
+
+		// Actual logic goes here.
+		PrintWriter out = response.getWriter();
+		out.println("<h1>" + message + "</h1>");
+	}
+
 	public void destroy() {
 		// do nothing.
 	}
