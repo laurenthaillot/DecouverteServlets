@@ -4,6 +4,7 @@
 	version="3.1">
 	
 	<welcome-file-list>
+		<welcome-file>creercontact.jsp</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
@@ -12,9 +13,19 @@
 		<servlet-class>co.simplon.poleEmploi.decouverteServlets.HelloworldNom</servlet-class>
 	</servlet>
 	
+	<servlet>
+		<servlet-name>creerContact</servlet-name>
+		<servlet-class>co.simplon.poleEmploi.decouverteServlets.CreerContact</servlet-class>
+	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>HelloworldNom</servlet-name>
 		<url-pattern>/bonjour</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>creerContact</servlet-name>
+		<url-pattern>/creercontact.do</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
