@@ -32,7 +32,7 @@
 					<label> Hobby : <span class="req"></span>
 					</label> 
 					<c:forEach var="monHobby" items="${ monContact.hobbies }" >
-		            ${monHobby.hobby }
+		            <li>${monHobby.hobby } </li>  
 		        </c:forEach>
 					
 				</div>	

@@ -14,13 +14,13 @@ import co.simplon.domaine.Hobbies;
 public class CreerContact extends HttpServlet {
 
 	public void init() throws ServletException {
-	};
+	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
 		HashSet<Hobbies> hobbies = new HashSet<Hobbies>();
-		hobbies.add(new Hobbies("programmation", 10));
+		hobbies.add(new Hobbies("Programmation", 10));
 		hobbies.add(new Hobbies("Cuisine", 11));
 
 		String nom = request.getParameter("nom");

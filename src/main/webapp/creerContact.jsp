@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<script type="text/javascript" src="affichePrenom.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Créer un contact</title>
 </head>
@@ -14,7 +15,9 @@
 			<div class="top-row">
 				<div class="champs">
 					<label> Prénom<span class="req"></span>
-					</label> <input type="text"  name="prenom" required autocomplete="off" />
+					</label> <input id = "prenom" type="text"  name="prenom" required autocomplete="off"  />
+					<button type ="button"  onclick="affichePrenom()"> Bonjour</button>
+					<div id="reponse"> </div>
 				</div>
 
 				<div class="champs">

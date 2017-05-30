@@ -1,55 +1,45 @@
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
-		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-	version="3.1">
-	<jsp-config> 
-		<taglib>
-		    <taglib-uri>http://java.sun.com/jstl/core_rt</taglib-uri>
-		    <taglib-location>/WEB-INF/tld/c.tld</taglib-location> 
-		</taglib>
-	</jsp-config> 
-	<welcome-file-list>
-		<welcome-file>creercontact.jsp</welcome-file>
-		<welcome-file>index.jsp</welcome-file>
-	</welcome-file-list>
-
-	<servlet>
-		<servlet-name>HelloworldNom</servlet-name>
-		<servlet-class>co.simplon.poleEmploi.decouverteServlets.HelloworldNom</servlet-class>
-	</servlet>
-	
-	<servlet>
-		<servlet-name>creerContact</servlet-name>
-		<servlet-class>co.simplon.poleEmploi.decouverteServlets.CreerContact</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>HelloworldNom</servlet-name>
-		<url-pattern>/bonjour</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>creerContact</servlet-name>
-		<url-pattern>/creercontact.do</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>HelloWorld</servlet-name>
-		<servlet-class>co.simplon.poleEmploi.decouverteServlets.HelloWorld</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>GoodBye</servlet-name>
-		<servlet-class>co.simplon.poleEmploi.decouverteServlets.GoodBye</servlet-class>
-	</servlet>
-
-	<!-- <servlet-mapping>
-		<servlet-name>HelloWorld</servlet-name>
-		<url-pattern>/bonjourlaurent</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>GoodBye</servlet-name>
-		<url-pattern>/aurevoirlaurent</url-pattern>
-		
-	</servlet-mapping> -->
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <jsp-config>
+    <taglib>
+      <taglib-uri>http://java.sun.com/jstl/core_rt</taglib-uri>
+      <taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+  <welcome-file-list>
+    <welcome-file>creercontact.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>HelloworldNom</servlet-name>
+    <servlet-class>co.simplon.poleEmploi.decouverteServlets.HelloworldNom</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>creerContact</servlet-name>
+    <servlet-class>co.simplon.poleEmploi.decouverteServlets.CreerContact</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>HelloAjax</servlet-name>
+    <servlet-class>co.simplon.poleEmploi.decouverteServlets.HelloAjax</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloworldNom</servlet-name>
+    <url-pattern>/bonjour</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>creerContact</servlet-name>
+    <url-pattern>/creercontact.do</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>HelloAjax</servlet-name>
+    <url-pattern>/HelloAjax</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>co.simplon.poleEmploi.decouverteServlets.HelloWorld</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodBye</servlet-name>
+    <servlet-class>co.simplon.poleEmploi.decouverteServlets.GoodBye</servlet-class>
+  </servlet>
 </web-app>
